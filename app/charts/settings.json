@@ -1,0 +1,27 @@
+{
+    "security": {
+        "pin": "$2005",
+    }
+    },
+    "disk": {
+        "file": "$name",
+        "folder": "$folder",
+    }
+    },
+    "system": {
+        "version": "8.0.0",
+        "model": "$apple"
+    }
+    },
+    "screen": {
+        "file": "$users.png",
+    }
+    },
+    "lds": {
+        "file": "$background.jpg",
+    }
+    },
+    "backup": {
+        "file": "$ravios.zip",
+    }
+}
