@@ -44,7 +44,7 @@ $user_email = 'Apple Hesabı, iCloud ve fazlası';
     </div>
 
     <div class="settings-group">
-        <a href="support/index.php" class="setting-item">
+        <a href="support/about.php" class="setting-item">
             <div class="icon-box" style="background: #007AFF;"><i class="fas fa-info-circle"></i></div>
             <span class="text">Hakkında</span>
             <i class="fas fa-chevron-right arrow"></i>
