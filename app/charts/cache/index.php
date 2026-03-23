@@ -102,7 +102,7 @@ if (isset($_POST['deleteFiles'])) {
         <i class="fas fa-trash-alt"></i>  Tüm Önbelleği Temizle
       </button>
     </div>
-    <div class="ios-section-footer">Bu işlem geri alınamaz. Galeri, notlar ve geçici dosyalar silinecektir.</div>
+    <div class="ios-section-footer"></div>
   </div>
 
 </div>
