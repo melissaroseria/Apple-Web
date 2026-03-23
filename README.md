@@ -25,7 +25,7 @@ PHP ile çalışan, mobil uyumlu, açık kaynak bir iOS simülasyon projesi.
 
 <div align="center">
 
-<img src="755/1.png" width="50" />
+<img src="755/1.png" width="40" align="left" />
 
 </div>
 
@@ -35,20 +35,20 @@ PHP ile çalışan, mobil uyumlu, açık kaynak bir iOS simülasyon projesi.
 
 <div align="center">
 
-<img src="755/2.png" width="50" />
 
+<img src="755/2.png" width="40" align="left" />
 </div>
 
 `⚙️ iOS Ayarlar Paneli`
+
 ---
 
-<div align="center">
-
-<img src="755/3.png" width="50" />
+<img src="755/3.png" width="40" align="left" />
 
 </div>
 
 `🌐 Safari Tarayıcı`
+
 ---
 
 > **Gereksinimler:** PHP 7.4+, Apache/Nginx, `mod_rewrite` aktif
