@@ -1,0 +1,10 @@
+{
+    "security": {
+        "pin": "$background.jpg",
+    }
+    },
+    "disk": {
+        "file": "$name",
+        "folder": "$folder",
+    }
+}
