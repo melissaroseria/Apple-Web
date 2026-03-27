@@ -1,0 +1,45 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^localhost/$ [NC]
+RewriteRule ^ - [F]
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+# Hata Sayfalarının Yönlendirilmesi
+DirectoryIndex index.html index.shtml index.htm Index.html Index.htm Index.shtml default.htm Default.htm default.html Default.html default.shtml Default.shtml page1.html index.pl index.cgi index.php index.php3 index.phtml home.htm home.html home.shtml index.wml index.pcgi quickstart.html
+
+# Ayarlar Sayfaları
+RewriteRule ^settings$ /app/charts/config.php [L]
+RewriteRule ^backup$ /app/charts/backup/index.php [L]
+RewriteRule ^cache$ /app/charts/cache/index.php [L]
+RewriteRule ^logs$ /app/charts/logs/index.php [L]
+RewriteRule ^screen$ /app/charts/screen/index.php [L]
+RewriteRule ^sec$ /app/charts/sec/index.php [L]
+RewriteRule ^support$ /app/charts/support/index.php [L]
+
+
+# Ana Kaynaklar
+RewriteRule ^home$ /app/main.php [L]
+RewriteRule ^bot$ /app/run/bot/index.php [L]
+RewriteRule ^browser$ /app/run/browser/index.php [L]
+RewriteRule ^gallery$ /app/run/gallery/index.php [L]
+RewriteRule ^notes$ /app/run/notes/index.php [L]
+RewriteRule ^post$ /app/run/post/index.php [L]
+RewriteRule ^shell$ /app/run/shell/index.php [L]
+
+# Admin Sayfaları
+RewriteRule ^premium$ /pages/premium.php [L]
+
+# Güvenlik
+RewriteCond %{HTTP_USER_AGENT} ^.*(SCspider|s2bot|BingBot).*$ [NC,OR]
+
+
+RewriteRule ^.* - [F,L]
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56___lsphp .php .php5 .phtml
+</IfModule>
+Options -Indexes
